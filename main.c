@@ -27,24 +27,29 @@ int main(){
 				break;
 			case 'B':                                           //case for B(balance) command
 				scanf("%d", &id);                           //input the id of the account
+				printf("please enter account number: ");
 				balance(accounts, id);                      //print the current balance
 				break;
 			case 'D':                                           //case for D(deposit) command 
 				scanf("%d", &id);                           //input the id of the account
 				scanf("%lf", &money);                       //input the amount for the deposit
+				printf("please enter amount for deposit:");
 				deposit(accounts, id, money);               //add the amount
 				break;
 			case 'W':                                           //case for W(withdraw) command
 				scanf("%d", &id);                           //input the id of the account
 				scanf("%lf", &money);                       //input the amount for the withdraw
+				printf("please enter amount for withdraw:");
 				withdraw(accounts, id, money);              //subtract the amount
 				break;
 			case 'C':                                           //case for C(close) command
 				scanf("%d", &id);                           //input the id of the account
+				printf("Please enter account number: ");
 				close(accounts, id, &size);                 //close the account
 				break;
 			case 'I':                                           //case for I(intrest) command
 				scanf("%d", &id);                           //input the id of the account
+				printf("please enter intrset rate: ");
 				intrest(accounts, id);                      //increase the balance by the intrest
 				break;
 			case 'P':                                           //case for P(print) command
