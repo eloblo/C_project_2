@@ -32,14 +32,16 @@ int main(){
 				break;
 			case 'D':                                           //case for D(deposit) command 
 				scanf("%d", &id);                           //input the id of the account
+				printf("please enter account number: ");
 				scanf("%lf", &money);                       //input the amount for the deposit
-				printf("please enter amount for deposit:");
+				printf("please enter amount for deposit: ");
 				deposit(accounts, id, money);               //add the amount
 				break;
 			case 'W':                                           //case for W(withdraw) command
 				scanf("%d", &id);                           //input the id of the account
+				printf("please enter account number: ");
 				scanf("%lf", &money);                       //input the amount for the withdraw
-				printf("please enter amount for withdraw:");
+				printf("please enter amount for withdraw: ");
 				withdraw(accounts, id, money);              //subtract the amount
 				break;
 			case 'C':                                           //case for C(close) command
@@ -49,14 +51,13 @@ int main(){
 				break;
 			case 'I':                                           //case for I(intrest) command
 				scanf("%d", &id);                           //input the id of the account
-				printf("please enter intrset rate: ");
+				printf("please enter intreset rate: ");
 				intrest(accounts, id);                      //increase the balance by the intrest
 				break;
 			case 'P':                                           //case for P(print) command
 				print(accounts);                            //prints the accounts
 				break;
 			case 'E':                                           //case for E(exit) command
-				printf("GoodBye\n");                        //print closing message
 				return 0;                                   //exist the function
 			}
 			id = 0;                                             //reset the id 
